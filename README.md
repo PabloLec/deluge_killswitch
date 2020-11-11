@@ -1,6 +1,6 @@
 # What is it ?
 This python script is meant to be used a Deluge kill switch. It verifies that your public IP is not the same as the one used on Deluge.
-If your IP is not protected, it will pause all you torrents. Deluge daemon is not really killed in order to preserve the data you didn't send to the trackers yet. This way, if you wish to fix your IP issue you can easily resume your torrenting.
+If your IP is not protected, it will pause all your torrents. Deluge daemon is not really killed in order to preserve the data you didn't send to the trackers yet. This way, if you wish to fix your IP issue you can easily resume your torrenting.
 
 
 # Requirements
