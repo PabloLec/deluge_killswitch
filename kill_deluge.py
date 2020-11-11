@@ -15,7 +15,7 @@ START_DAEMON_IF_STOPPED = True
 
 def is_deluge_started():
     '''Checks through grep if deluge daemon is started'''
-    processes = str(subprocess.check_output("ps -aux | grep '"+DELUGE_PATH+"'", shell = True).decode('utf-8')).splitlines()
+    processes = str(subprocess.check_output("ps -aux | grep '"+DELUGE_PATH+"'", shell=True).decode('utf-8')).splitlines()
     for process in processes:
         if "grep" not in process: return True
     return False
@@ -34,7 +34,7 @@ def check_ip():
     '''Parse your public IP through dig
     Parse your proxy IP with the response of the verification tracker'''
     restart_torrent()
-    public_raw = str(subprocess.check_output('dig +short myip.opendns.com @resolver1.opendns.com',shell=True))
+    public_raw = str(subprocess.check_output('dig +short myip.opendns.com @resolver1.opendns.com', shell=True))
     proxy_raw = str(subprocess.check_output("deluge-console 'info -v "+TORRENT_ID+"'", shell=True))
 
     public_IP = re.findall('([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)', public_raw)
