@@ -1,7 +1,7 @@
 import os, sys, re, subprocess, time
 from datetime import datetime
 
-###################################################################
+#############################################################################
 # ENTER THE HEXADECIMAL HASH OF THE TORRENT YOU USE TO VERIFY YOUR SEEDING IP
 # Consider using http://checkmytorrentip.net
 # You can find the hash on your client GUI or with deluge-console
@@ -11,7 +11,7 @@ TORRENT_ID = "2fa71a2dbb7d53a39373a9c4e2c9d89aaa7a6db1"
 DELUGE_PATH = "/usr/bin/deluged"
 # Change if you do not want to start the daemon if it is stopped
 START_DAEMON_IF_STOPPED = True
-###################################################################
+#############################################################################
 
 def is_deluge_started():
     '''Checks through grep if deluge daemon is started'''
