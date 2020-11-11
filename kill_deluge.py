@@ -9,7 +9,7 @@ from datetime import datetime
 TORRENT_ID = "2fa71a2dbb7d53a39373a9c4e2c9d89aaa7a6db1"
 # Modify the daemon path if needed
 DELUGE_PATH = "/usr/bin/deluged"
-# Change if you do not want to start the daemon if it is stopped
+# Change if you do not want to start the daemon if it is currently stopped
 START_DAEMON_IF_STOPPED = True
 #############################################################################
 
