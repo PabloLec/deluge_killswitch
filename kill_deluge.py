@@ -31,8 +31,8 @@ def restart_torrent():
     print(" - Torrent restarted - ")
 
 def check_ip():
-    '''Parse your public IP through dig
-    Parse your proxy IP with the response of the verification tracker'''
+    '''Parses your public IP through dig
+    Parses your proxy IP with the response of the verification tracker'''
     restart_torrent()
     public_raw = str(subprocess.check_output('dig +short myip.opendns.com @resolver1.opendns.com', shell=True))
     proxy_raw = str(subprocess.check_output("deluge-console 'info -v "+TORRENT_ID+"'", shell=True))
