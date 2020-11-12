@@ -4,9 +4,9 @@ If your IP is not protected, it will pause all your torrents. Deluge daemon is n
 
 
 # Requirements
-- Python 3+
-- Deluge 2+
-- deluge-console 2+
+- Python 3.x
+- Deluge 2.x
+- deluge-console 2.x
 - dnsutils
 
 To install dependencies:
